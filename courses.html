@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | TBS - Tum Bi Sikho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="logo.png" alt="TBS Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="roadmaps.html">Roadmaps</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="get-started-btn">Get Started</a>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="subpage-hero">
+            <div class="container">
+                <h1>Explore Free Courses</h1>
+                <p>Master in-demand skills with our industry-vetted free courses.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="container">
+                <div class="search-filter-bar">
+                    <div class="search-input-wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="course-search" placeholder="Search courses (e.g. Web Development, AI)...">
+                    </div>
+                    <div class="filter-tags">
+                        <button class="filter-tag active" data-category="all">All</button>
+                        <button class="filter-tag" data-category="tech">Tech</button>
+                        <button class="filter-tag" data-category="creative">Creative</button>
+                        <button class="filter-tag" data-category="business">Business</button>
+                        <button class="filter-tag" data-category="ai">AI Tools</button>
+                    </div>
+                </div>
+                <div class="courses-grid" id="courses-container">
+                    <!-- Course Cards (Repeated for variety) -->
+                    <div class="course-card" data-category="tech" data-title="YouTube Automation Full Course">
+                        <div class="course-thumb">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="YouTube Automation">
+                            <span class="course-badge">Free</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>YouTube Automation Full Course</h3>
+                            <div class="course-meta">
+                                <span>4.9 <i class="fa-solid fa-star"></i></span>
+                                <span>2.5K Students</span>
+                                <span>6h 30m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card" data-category="ai" data-title="ChatGPT & AI Tools Mastery">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=400" alt="ChatGPT">
+                            <span class="course-badge">Free</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>ChatGPT & AI Tools Mastery</h3>
+                            <div class="course-meta">
+                                <span>4.8 <i class="fa-solid fa-star"></i></span>
+                                <span>3.2K Students</span>
+                                <span>5h 20m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card" data-category="tech" data-title="Web Development Bootcamp">
+                        <div class="course-thumb">
+                            <img src="course_web_dev_1777309312449.png" alt="Web Development">
+                            <span class="course-badge">Free</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Web Development Bootcamp</h3>
+                            <div class="course-meta">
+                                <span>4.9 <i class="fa-solid fa-star"></i></span>
+                                <span>4.1K Students</span>
+                                <span>10h 15m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card" data-category="business" data-title="Freelancing From Scratch">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=400" alt="Freelancing">
+                            <span class="course-badge">Free</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Freelancing From Scratch</h3>
+                            <div class="course-meta">
+                                <span>4.7 <i class="fa-solid fa-star"></i></span>
+                                <span>3.7K Students</span>
+                                <span>8h 45m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card" data-category="creative" data-title="UI/UX Design Fundamentals">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=400" alt="UI/UX">
+                            <span class="course-badge">Free</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>UI/UX Design Fundamentals</h3>
+                            <div class="course-meta">
+                                <span>4.9 <i class="fa-solid fa-star"></i></span>
+                                <span>1.8K Students</span>
+                                <span>12h 45m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card" data-category="tech" data-title="Python for Beginners">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=400" alt="Python">
+                            <span class="course-badge">Free</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Python for Beginners</h3>
+                            <div class="course-meta">
+                                <span>4.8 <i class="fa-solid fa-star"></i></span>
+                                <span>5.2K Students</span>
+                                <span>15h 00m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="logo.png" alt="TBS Logo">
+                </div>
+                <p>Empowering students to learn, grow and become independent with practical skills.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="roadmaps.html">Roadmaps</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">AI Tools</a></li>
+                    <li><a href="#">Video Editing</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-quote">
+                <div class="quote-card">
+                    <p>Education is the most powerful weapon which <strong>you can use to</strong> change the world.</p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" alt="Icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
